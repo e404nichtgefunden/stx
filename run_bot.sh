@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # Install the required Python module
-pip3 install python-telegram-bot --upgrade
 
 # Function to run the bot and restart if it crashes
 run_bot() {
@@ -12,7 +11,7 @@ run_bot() {
         
         # If the bot exits, wait for 5 seconds before restarting
         echo "Bot stopped. Restarting in 5 seconds..."
-        sleep 5
+        sleep 3
     done
 }
 
